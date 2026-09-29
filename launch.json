@@ -1,0 +1,17 @@
+{
+  "kind": "evm_project",
+  "token": {
+    "contract": "LaunchToken",
+    "name": "Great Family",
+    "symbol": "GFAM",
+    "decimals": 18
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0x0000000000000000000000000000000000000000",
+    "fee": 3000,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "notes": "Token-only launch for the Great Family connected-wallet Swap experience. LaunchToken in src/LaunchToken.sol has a nonpayable constructor with no arguments, no administrative role and no initialization calls. The factory supplies the LP and MerkleDistributor; the pool pairs against native ETH and has no hook. initialPrice is decimal sqrtPriceX96; when the pinned policy specifies initialMarketCapWei, the deployer derives the effective opening price from policy. Services own policy, signed artifact linkage, source publication, attestation, admission and deployment, followed by frontend publication."
+}
